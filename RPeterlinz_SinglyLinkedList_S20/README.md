@@ -1,5 +1,5 @@
 # Singly Linked List
 
-Implementation of Insertion Sort, Quick Sort, and Merge Sort
+Implimentation of a Singly Linked List
 
 ![class structure](LinkedListDesign.png)
