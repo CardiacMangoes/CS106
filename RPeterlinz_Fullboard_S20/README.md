@@ -1,55 +1,7 @@
-# JavaCoreTemplate v4
+# Full Board
 
-Includes:
-* `Main.java`, with a `main()` that is ready to go, and has useful classes statically imported.
+![Full Board](http://www.addictinggames.com/puzzle-games/fullboard.jsp) is an interactive one-person puzzle/game by LightForce played on a rectangular grid.
 
-* Provides simple static functions that make Java a **whole lot easier to use**.  For example, to print to the screen it's just:
+The game starts with a board of M rows by N columns with some grid squares marked as “obstacles” (drawn as black dots).  The player chooses a starting position to place a ball (marked “S” in the figure to the right) and chooses a direction to advance (left, right, up, or down).  Once a direction is chosen, the ball will advance in that direction until it hits an obstacle, the boundary of the game board, or a square that the ball has already been through.  The player then chooses another direction, and the ball will advance in the same manner. The game ends when no legal move can be made.  The player wins if and only if the ball has traveled through all the empty grid squares on the board.
 
-```java
-println("Hello");
-```
-rather than the EVIL `System.out.println("Hello");`
-
-Read a whole file into a String with one line of code:
-```java
-String quakeText = readFile("4.5_week.atom");
-```
-Read a file into a list of Strings:
-```java
-var words = readFileAsLines("dict.txt");
-```
-Write a String to a file:
-```java
-writeFile("file.txt", str);
-```
-Write a list of strings to a file:
-```java
-writeFileAsLines("lines.txt", list);
-```
-printf w/o requiring System.out in front:
-```java
-printf("%d words in %s\n", words.size(), path);
-print("Hello");
-```
-Read a line of text from the console:
-```java
-String s = readLine();
-```
-Parse ints, floats, etc w/o having to put Integer in front:
-```java
-parseInt/Long/Float/Double/Boolean()
-```
-
-* `commons-lang3`:  With the wonderful [`StringUtils`](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html), which has `join`, `substringsBetween`, `reverse`, etc.  For example:
-```java
-String[] titles = substringsBetween(quakesXml, "<title>", "</title>");
-```
-
-* [PMD](https://pmd.github.io/) support, including a tailored set of rules (`cs106.ruleset`).
-
-
-# STATIC IMPORT OF CORE FUNCTIONALITY
-JavaCoreTemplate's Main class already has the Core functionality statically imported.  If that static import has been removed, and to add core functionality to other classes, add the following static import at the top of the .java file:
-```java
-import static sbcc.Core.*;
-```
+![class structure](LinkedListDesign.png)
