@@ -7,7 +7,9 @@ A complete, balanced binary tree is achieved using this equation I developed by 
 x is the size of the sorted array, r is the index of the root
 
 ![equation a](a.png)
+
 ![equation b](b.png)
+
 ![equation r](r.png)
 
 Using this equation, I can set the root as a pivot and recursively apply the same equation to the left and right sides of the array until there is one or zero values left in the array
