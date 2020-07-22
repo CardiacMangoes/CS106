@@ -4,7 +4,7 @@ Spell Checker that uses a complete, balanced binary tree to store words and give
 
 A complete, balanced binary tree is achieved using this equation I developed by analyzing the relationship between the size of a sorted list and the index that would be its root in a complete balanced binary tree
 
-x is the size of the sorted array, r is the index of the root
+x is the size of the sorted array, r is the index of the root starting at 0
 
 ![equation a](a.png)
 
